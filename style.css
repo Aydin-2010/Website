@@ -1,0 +1,119 @@
+body{
+background-color: rgb(89,37,91);
+}
+#container{
+position: absolute;
+width:450px;
+height:550px;
+top: 10px;
+left:250px;
+}
+
+#image1{
+width:450px;
+height:550px;
+}
+
+#textfield{
+position:absolute;
+width:400px;
+height:70px;
+top:265px;
+left:25px;
+background-color: rgb(89,37,91); 
+color: rgb(245,213,224);
+border-radius:15px;
+border:3px,solid,rgb(245,213,224);
+border-color: rgb(245,213,224),3px;
+outline:none;
+font-size:30px;
+text-align: center;
+font-family:"Space Grotesk", sans-serif;
+font-weight:normal;
+}
+
+#textcontainer01{
+position:absolute;
+width:450px;
+top:80px;
+left:0px;
+right:0px;
+text-align:center;
+}
+
+#textcontainer02{
+position:absolute;
+width:450px;
+top:130px;
+left:0px;
+right:0px;
+text-align:center;
+}
+
+#gametitle01{
+color: rgb(245,213,224);
+font-size: 35px;
+font-family:"Space Grotesk",sans-serif;
+font-weight:bold;
+}
+
+#gametitle02{
+color: rgb(245,213,224);
+font-size: 35px;
+font-family:"Space Grotesk",sans-serif;
+font-weight:bold;
+}
+
+#conditionContainer{
+position:absolute;
+width:450px;
+top:440px;
+left:0px;
+right:0px;
+text-align:center;
+/*background-color: rgb(123,51,125);*/
+}
+
+#Submit{
+position:absolute;
+top:370px;
+left:120px;
+width:220px;
+height:60px;
+background-color: rgb(89,37,91);
+color: rgb(245,213,224);
+border:none;
+outline:none;
+border-radius:15px;
+font-size:25px;
+font-family:"Space Grotesk",sans-serif;
+font-weight:bold;
+}
+
+#alien{
+position: absolute;
+width:auto;
+height:30px;
+left:35px;
+top:440px;
+color: rgb(245,213,224);
+font-size: 25px;
+font-family:"Space Grotesk",sans-serif;
+font-weight:bold;
+}
+
+#condition{
+display:none;
+color: rgb(245,213,224);
+font-size: 25px;
+font-family:"Space Grotesk",sans-serif;
+font-weight:bold;
+}
+
+.button:hover{
+opacity: 0.90;
+}
+
+.button:active{
+opacity:0.50;
+}
