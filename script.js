@@ -6,12 +6,10 @@ let randomNumber = Math.floor(Math.random() * maxLimit);
 submit.onclick = function() {
     try {
         let userInput = document.getElementById("textfield").value; // Get the input value
+        if(!/^\d+$/){
+throw new Error("Invalid");
+}
         userInput = parseInt(userInput); // Parse it here
-
-        // Check if parsing was successful
-        if (isNaN(userInput)) {
-            throw new Error("Invalid Input");// Throw error if input is not a number
-        }
 
         if (userInput === randomNumber) {
             console.log("You guessed the correct number!");
