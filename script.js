@@ -5,8 +5,8 @@ let randomNumber = Math.floor(Math.random() * maxLimit);
 
 submit.onclick = function() {
     try {
-        let userInput = document.getElementById("textfield").value; // Get the input value
-        if(!/^\d+$/){
+        let userInput = document.getElementById("textfield").value.trim(); // Get the input value
+        if(!/^\d+$/.test(userInput)){
 throw new Error("Invalid");
 }
         userInput = parseInt(userInput); // Parse it here
