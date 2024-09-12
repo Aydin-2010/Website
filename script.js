@@ -3,13 +3,26 @@ const condition = document.getElementById("condition");
 const maxLimit = 200;
 let randomNumber = Math.floor(Math.random() * maxLimit); 
 
+function parseIntStrict(value) {
+    let chars = value.split(''); // Convert string to char array (Java-like approach)
+    
+    for (let i = 0; i < chars.length; i++) {
+        // Check if the character is not a digit
+        if (chars[i] < '0' || chars[i] > '9') {
+            throw new Error("Invalid Input: Non-numeric character found"); // Throw an error if non-digit found
+        }
+    }
+    
+    return parseInt(value); // Safe to parse it into an integer after validation
+}
+
 submit.onclick = function() {
     try {
         let userInput = document.getElementById("textfield").value.trim(); // Get the input value
-        if(!/^\d+$/.test(userInput)){
+      /*  if(!/^\d+$/.test(userInput)){
 throw new Error("Invalid");
-}
-        userInput = parseInt(userInput); // Parse it here
+}*/
+        userInput = parseIntStrict(userInput); // Parse it here
 
         if (userInput === randomNumber) {
             console.log("You guessed the correct number!");
